@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFCC99; /* Light Orange Background */
+            animation: fadeIn 1.5s ease-out; /* Fade-in effect for the entire body */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333; /* Dark background for the header */
+            padding: 15px 0;
+            text-align: center;
+            animation: slideIn 1s ease-out; /* Slide-in effect for the header */
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        header a:hover {
+            color: antiquewhite;
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Heading Styles */
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            color: black;
+            opacity: 0;
+            animation: fadeInHeading 1s forwards; /* Fade-in effect for heading */
+        }
+
+        /* Text Bubble Styles */
+        .text-bubble {
+            background-color: #FFFF99; /* Light Yellow Background for text bubble */
+            color: #333;
+            padding: 20px;
+            margin: 30px auto;
+            border-radius: 15px;
+            max-width: 80%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: slideInBubble 1s ease-out; /* Slide-in effect for the text bubble */
+        }
+
+        /* Animation Definitions */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInHeading {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%); /* Header starts off-screen to the left */
+            }
+            to {
+                transform: translateX(0); /* Header slides into place */
+            }
+        }
+
+        @keyframes slideInBubble {
+            from {
+                transform: translateX(100%); /* Bubble starts from the right */
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0); /* Bubble slides into place */
+                opacity: 1;
+            }
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 0;
+            }
+
+            header a {
+                margin: 0 8px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">Pkn</a>
+            <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+            <a href="english.html">English</a>
+            <a href="ips.html">IPS</a>
+            <a href="mandarin.html">Mandarin</a>
+        </nav>
+    </header>
+
+    <h1>Ini Tugas-Tugasku Selama EduTrip ke Taiwan, Kaohsiung</h1>
+
+    <!-- Text Bubble Section -->
+    <div class="text-bubble">
+        <p>
+            During my EduTrip to Taiwan, Kaohsiung, I had the chance to participate in various cultural and educational activities. From exploring the beautiful landscapes to learning about Taiwanese history, the trip was filled with exciting experiences. One of the highlights was visiting local museums and attending interactive workshops that helped enhance my understanding of the Taiwanese culture.
+        </p>
+    </div>
+</body>
+</html>

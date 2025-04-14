@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Navigasi</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 228, 244); /* Soft pink background */
+            color: #333;
+            animation: fadeIn 1.5s ease-out; /* Fade in effect */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: rgb(255, 182, 193); /* Light pink background for header */
+            padding: 10px 0;
+            text-align: center;
+            animation: slideIn 1s ease-out; /* Slide-in effect for header */
+        }
+
+        header a {
+            color: rgb(146, 245, 146); /* Light green links */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        header a:hover {
+            color: powderblue; /* Light blue on hover */
+            transform: scale(1.1); /* Slight zoom effect */
+        }
+
+        /* Heading Styles */
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            color: rgb(255, 105, 180); /* Deep pink heading */
+            opacity: 0;
+            animation: fadeInHeading 1s forwards; /* Fade-in animation */
+        }
+
+        /* Table Styles */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the table */
+            opacity: 0;
+            animation: fadeInTable 1.5s forwards; /* Table fade-in animation */
+        }
+
+        th {
+            background-color: rgb(255, 192, 203); /* Light pink for table header */
+            color: white;
+            text-align: left;
+            padding: 12px;
+            font-size: 18px;
+        }
+
+        td {
+            padding: 15px;
+            text-align: justify;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease; /* Smooth transition for images */
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Slight zoom effect on image hover */
+        }
+
+        /* Text Bubble Styles */
+        .text-bubble {
+            background-color: rgb(255, 182, 193); /* Light pink bubble background */
+            color: white;
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 15px;
+            max-width: 80%;
+            animation: slideInBubble 1s ease-out; /* Slide-in effect for text bubbles */
+        }
+
+        /* Animation Definitions */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInHeading {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInTable {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Table starts slightly below */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Table moves into position */
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%); /* Header starts off-screen to the left */
+            }
+            to {
+                transform: translateX(0); /* Header slides into place */
+            }
+        }
+
+        @keyframes slideInBubble {
+            from {
+                transform: translateX(100%); /* Bubble starts from the right */
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0); /* Bubble slides into place */
+                opacity: 1;
+            }
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 0;
+            }
+
+            header a {
+                margin: 0 8px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            table {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="agama.html">Agama</a>
+            <a href="pkn.html">Pkn</a>
+            <a href="bahasaindonesia.html">Bahasa Indonesia</a>
+            <a href="english.html">English</a>
+            <a href="ips.html">IPS</a>
+            <a href="mandarin.html">Mandarin</a>
+        </nav>
+    </header>
+
+    <h1>Ini adalah Bahasa Indonesia</h1>
+
+    <div class="text-bubble">
+        <p>Dalam pelajaran Bahasa Indonesia saya membuat teks resensi tentang hotel di Taiwan. Saya menjelaskan pengalaman saya menginap di sana, memberikan ulasan tentang fasilitas, dan layanan yang sangat baik. Teks ini membantu saya untuk menulis dengan jelas dan terstruktur dalam bahasa Indonesia.</p>
+    </div>
+
+    <table>
+        <tr style="background-color: rgb(255, 192, 203);">
+            <th>Resensi Hotel Taiwan</th>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <img src="Screenshot 2025-04-07 111309.png" alt="Hotel in Taiwan" width="1280" height="1000" />
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
